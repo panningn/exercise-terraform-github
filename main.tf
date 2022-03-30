@@ -75,7 +75,3 @@ resource "aws_security_group" "web-sg" {
   }
 }
 
-output "web-address" {
-  value = "${aws_instance.web.public_dns}:8080"
-}
-
