@@ -43,12 +43,11 @@ data "aws_ami" "ubuntu" {
 }
 
 resource "aws_instance" "web" {
-  count                  = 4
   ami                    = data.aws_ami.ubuntu.id
   instance_type          = "t2.micro"
   vpc_security_group_ids = [aws_security_group.web-sg.id]
-
-  user_data = <<-EOF
+  tags                   = merge(var.project_tags)
+  user_data              = <<-EOF
               #!/bin/bash
               apt-get update
               apt-get install -y apache2
