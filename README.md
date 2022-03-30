@@ -59,3 +59,12 @@ Review the code and make the appropriate changes to your configuration:
 2. Configure your workspaces with the name you used
 3. Inspect the github workflow
 
+## »Exectute, Push your and start 
+Log into Terraform Cloud and select your workspace and execute your plan. Clickinn Action > Start Plan. 
+
+![action](./images/action.png)
+
+After it is succesful.. add some code
+
+## »Add some more code to your repo
+Create a new branch and add some more code. 
