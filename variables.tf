@@ -9,5 +9,5 @@ variable "project_tags" {
   }
 }
 variable "instance_count" {
-  default = "5"
+  default = "1"
 }
