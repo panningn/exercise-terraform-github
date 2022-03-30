@@ -8,3 +8,6 @@ variable "project_tags" {
     CostCenter = "0001"
   }
 }
+variable "instance_count" {
+  default = "2"
+}
