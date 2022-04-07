@@ -3,7 +3,7 @@ variable "project_tags" {
   type = map(string)
   default = {
     Name       = "terraform-github"
-    Owner      = "Sebastian maniak"
+    Owner      = "Nicole Panning"
     Purpose    = "Dev"
     CostCenter = "0001"
   }

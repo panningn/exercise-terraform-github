@@ -12,10 +12,10 @@ terraform {
   required_version = ">= 1.1.0"
 
   cloud {
-    organization = "sebbycorp"
+    organization = "terraform-intro"
 
     workspaces {
-      name = "exercise-terraform-github"
+      name = "terraform-exercise-github"
     }
   }
 }
@@ -53,7 +53,7 @@ resource "aws_instance" "web" {
               apt-get update
               apt-get install -y apache2
               sed -i -e 's/80/8080/' /etc/apache2/ports.conf
-              echo "Hello World From Seb" > /var/www/html/index.html
+              echo "Hi from Nic" > /var/www/html/index.html
               systemctl restart apache2
               EOF
 }
